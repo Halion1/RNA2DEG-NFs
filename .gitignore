@@ -1,0 +1,51 @@
+# Nextflow
+.nextflow*
+work/
+*.nextflow.log*
+timeline.*
+report.*
+trace.*
+dag.*
+.nextflow/
+**/.nextflow/
+**/.nextflow.log*
+
+# Outputs
+results/
+out/
+logs/
+tmp/
+
+# Data
+data/
+references/
+refs/
+genomes/
+indices/
+
+# Python
+__pycache__/
+*.pyc
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Containers / envs
+.conda/
+.mamba/
+.env
+.envs/
+
+# Misc
+*.swp
+*.bak
+
+*.html
