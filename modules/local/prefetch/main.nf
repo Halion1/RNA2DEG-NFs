@@ -3,6 +3,7 @@ process PREFETCH {
     tag "${accession}"
     label 'prefetch_prof'
     conda "${projectDir}/environments/batch_down_env.yml"
+    publishDir params.download_dir, mode: 'copy'
 
     input:
     val accession

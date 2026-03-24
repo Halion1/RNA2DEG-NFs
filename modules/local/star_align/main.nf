@@ -3,6 +3,7 @@ process STAR_ALIGN {
     tag "${id}"
     label 'fastqstar_prof'
     conda "${projectDir}/environments/deg_preprocessing.yml"
+    publishDir params.bam_dir, mode: 'copy'
 
     input:
     tuple val(id), val(sample1), path(seqfastq1), val(sample2), path(seqfastq2)

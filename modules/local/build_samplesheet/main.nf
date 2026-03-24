@@ -3,6 +3,7 @@ process BUILD_SAMPLESHEET {
     tag "${mode}"
     label 'csv_prof'
     conda "${projectDir}/environments/metadata_env.yml"
+    publishDir params.download_dir, mode: 'copy'
 
     input:
     path md5_table

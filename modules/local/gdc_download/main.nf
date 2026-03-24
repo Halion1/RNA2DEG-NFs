@@ -3,6 +3,7 @@ process GDC_DOWNLOAD {
     tag "${accession}"
     label 'gdc_prof'
     conda "${projectDir}/environments/gdc_download.yml"
+    publishDir params.download_dir, mode: 'copy'
 
     input:
     val accession

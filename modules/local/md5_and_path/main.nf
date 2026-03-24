@@ -3,6 +3,7 @@ process MD5_AND_PATH {
     tag "${directory}"
     label 'md5_prof'
     conda "${projectDir}/environments/metadata_env.yml"
+    publishDir params.manifest_dir, mode: 'copy'
 
     input:
     path directory

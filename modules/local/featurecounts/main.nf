@@ -3,6 +3,7 @@ process FEATURECOUNTS {
     tag "${id}"
     label 'counts_prof'
     conda "${projectDir}/environments/deg_preprocessing.yml"
+    publishDir params.table_dir, mode: 'copy'
 
     input:
     tuple val(id), path(bam)
