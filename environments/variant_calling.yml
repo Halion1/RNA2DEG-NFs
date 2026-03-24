@@ -1,0 +1,13 @@
+name: variant_calling
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - gatk4=4.3.0.0
+  - picard=3.0.0
+  - samtools=1.16.1
+  - bcftools=1.16
+  - vcftools=0.1.17
+  - tabix
+  - openjdk=17
