@@ -2,7 +2,7 @@ process SRA_METADATA {
 
     tag "${accession}"
     label 'metadata_prof'
-    conda 'batch_down_env.yml'
+    conda "${projectDir}/environments/batch_down_env.yml"
 
     input:
     val accession

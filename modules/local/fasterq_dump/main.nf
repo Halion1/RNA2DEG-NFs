@@ -2,7 +2,7 @@ process FASTERQ_DUMP {
 
     tag "${accession}"
     label 'fasterqdump_prof'
-    conda 'batch_down_env.yml'
+    conda "${projectDir}/environments/batch_down_env.yml"
 
     input:
     tuple val(accession), path(metadata_file), path(accession_sra)

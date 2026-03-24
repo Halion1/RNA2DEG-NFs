@@ -2,7 +2,7 @@ process GDC_DOWNLOAD {
 
     tag "${accession}"
     label 'gdc_prof'
-    conda 'gdc_download'
+    conda "${projectDir}/environments/gdc_download.yml"
 
     input:
     val accession
